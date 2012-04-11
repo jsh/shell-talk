@@ -1,0 +1,13 @@
+SHELL=/bin/bash
+PATH=/bin:/usr/bin:~/bin
+BASH_ENV=/home/build/.bashrc
+MAILTO=jeffrey.haemer@gmail.com
+
+# minute (0-59)
+# |      hour (0-23)
+# |      |      day of the month (1-31)
+# |      |      |    month of the year (jan-dec)
+# |      |      |    |     day of the week (sun-mon, with 0=sun)
+# |      |      |    |     |        command
+# |      |      |    |     |        |
+#
