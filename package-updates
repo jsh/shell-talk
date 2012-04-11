@@ -1,0 +1,37 @@
+Package Updates
+
+Zzzzz.  Oh.  Sorry.  I fell asleep.
+
+===========
+Take updates.
+Do it as root (su -s)
+apt-get update; apt-get dist-upgrade; apt-get autoremove
+notice that I do it often
+history, and its explanation
+
+time apt-get update; apt-get dist-upgrade; apt-get autoremove
+turn it into a script
+set EDITOR
+which vi
+readlink -f
+
+
+
+remember to put in a #
+write to a file
+professionalize: add shebang line, ampersands, indentation, pull out time
+note that && and || auto-continue, like for & while
+chmod it, add to path
+add to the crontab
+
+Summary:
+su -s
+use the history
+how to think about history
+develop on the command line, then turn into a script
+&& and || let you format nicely
+EDITOR acts for all
+command_not_found_handle()
+readlink -f
++=: adds to path
+

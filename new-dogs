@@ -1,0 +1,6 @@
+parallel trees
+find | bash
+try commands before you do them
+nesting: cd $(dirname $(readlink -f $(which vi)))
+functions: die() and warn()
+[ "$variable" ]

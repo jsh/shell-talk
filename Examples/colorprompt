@@ -1,0 +1,17 @@
+# create a pair of color prompts
+# one for success, one for failure
+
+_red="\[\e[01;31m\]"
+_green="\[\e[01;32m\]"
+_neutral="\[\e[0m\]"
+
+prompt() {
+
+  if [ $? = 0 ]; then
+    PS1="\u@\h:\w${_green}\$${_neutral} "
+  else
+    PS1="\u@\h:\w${_red}\$${_neutral} "
+  fi
+}
+
+export PROMPT_COMMAND=prompt
