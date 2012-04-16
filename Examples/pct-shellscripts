@@ -1,0 +1,23 @@
+#!/bin/bash
+
+shellscripts() {
+  for i in $(echo ${PATH//:/ }); do
+    pushd $i
+    file * 2>/dev/null
+    popd 
+  done |
+  grep shell |
+  wc -l
+}
+
+commands() {
+  for i in $(echo ${PATH//:/ }); do
+    pushd $i
+    file * 2>/dev/null
+    popd 
+  done |
+  wc -l
+}
+
+printf "Percentage shell scripts is "
+echo $(shellscripts)/$(commands) | bc -l

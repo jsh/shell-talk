@@ -1,0 +1,7 @@
+#!/bin/bash -u
+
+source gripe
+
+usage="$0 [name]"
+[ $# -le 1 ] || die $usage
+echo hello ${1:-world}
