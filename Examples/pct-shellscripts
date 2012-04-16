@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -eu
 
 shellscripts() {
   for i in $(echo ${PATH//:/ }); do
@@ -19,5 +19,5 @@ commands() {
   wc -l
 }
 
-printf "Percentage shell scripts is "
-echo $(shellscripts)/$(commands) | bc -l
+pct=$(echo "100*$(shellscripts)/$(commands)" | bc -l)
+printf "%2.4s%% of the executables in \$PATH are shell scripts\n" $pct
